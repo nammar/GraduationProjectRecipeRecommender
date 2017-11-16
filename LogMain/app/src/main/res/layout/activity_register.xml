@@ -7,7 +7,7 @@
     tools:context="com.resiepe.taleeb.logmain.Register">
 
     <EditText
-        android:id="@+id/Pname"
+        android:id="@+id/pname"
         android:layout_width="453dp"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"
@@ -15,59 +15,56 @@
         android:ems="10"
         android:hint="Your Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Uname"
+        app:layout_constraintBottom_toTopOf="@+id/uname"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintVertical_bias="0.059"
+        tools:layout_editor_absoluteX="-11dp" />
 
     <EditText
-        android:id="@+id/Uname"
+        android:id="@+id/uname"
         android:layout_width="451dp"
         android:layout_height="51dp"
         android:ems="10"
         android:hint="UserName"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="135dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="78dp" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/ppassword"
         android:layout_width="445dp"
         android:layout_height="44dp"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="38dp"
-        android:layout_marginTop="45dp"
-        app:layout_constraintTop_toBottomOf="@+id/Uname"
-        tools:layout_editor_absoluteY="229dp" />
+        tools:layout_editor_absoluteX="-44dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/rpassword"
         android:layout_width="439dp"
         android:layout_height="0dp"
         android:ems="10"
         android:hint="Enter Password Again"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteX="3dp"
         android:layout_marginTop="39dp"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/ppassword" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/email"
         android:layout_width="435dp"
         android:layout_height="44dp"
         android:ems="10"
         android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteX="32dp"
         android:layout_marginTop="43dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintTop_toBottomOf="@+id/rpassword" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/phone"
         android:layout_width="435dp"
         android:layout_height="0dp"
         android:ems="10"
@@ -75,11 +72,11 @@
         android:inputType="phone"
         tools:layout_editor_absoluteX="47dp"
         android:layout_marginTop="47dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         tools:layout_editor_absoluteY="576dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signup"
         android:layout_width="142dp"
         android:layout_height="48dp"
         android:layout_marginLeft="352dp"
@@ -89,6 +86,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="562dp" />
+        tools:layout_editor_absoluteY="539dp" />
+
+
 
 </android.support.constraint.ConstraintLayout>
