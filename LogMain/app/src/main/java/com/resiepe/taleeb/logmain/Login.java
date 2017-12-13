@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
@@ -62,6 +63,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
     private View mProgressView;
     private View mLoginFormView;
 
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -236,6 +238,7 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return new CursorLoader(this,
