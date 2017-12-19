@@ -3,23 +3,35 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
         <TextView
+            android:id="@+id/recipe_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
-            android:id="@+id/recipe_title" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
+            android:id="@+id/recipe_disc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Small Text"
-            android:id="@+id/recipe_disc" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:text="listen"
+            android:onClick="speak_my_text"/>
+
     </LinearLayout>
 </LinearLayout>
