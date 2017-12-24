@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:Background="@drawable/photo1"
     tools:context="com.resiepe.taleeb.logmain.MainActivity">
+    <!--android:Background="@drawable/photo1"-->
 
     <Button
         android:id="@+id/login"
@@ -28,12 +28,13 @@
         android:layout_width="169dp"
         android:layout_height="48dp"
         android:text="Register"
-        tools:layout_editor_absoluteY="151dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.502" />
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/guest" />
 
     <Button
         android:id="@+id/guest"
@@ -45,9 +46,6 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/login"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="225dp"
-        app:layout_constraintVertical_bias="0.809" />
+        android:layout_marginBottom="225dp" />
 </android.support.constraint.ConstraintLayout>

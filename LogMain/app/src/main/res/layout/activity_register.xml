@@ -1,93 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.resiepe.taleeb.logmain.Register">
 
     <EditText
         android:id="@+id/pname"
-        android:layout_width="453dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Your Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/uname"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059"
-        tools:layout_editor_absoluteX="-11dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/uname"
-        android:layout_width="451dp"
-        android:layout_height="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="UserName"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="78dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/ppassword"
-        android:layout_width="445dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="-44dp"
-        android:layout_marginTop="37dp"
-        app:layout_constraintTop_toBottomOf="@+id/uname" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/rpassword"
-        android:layout_width="439dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Password Again"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="3dp"
-        android:layout_marginTop="39dp"
-        app:layout_constraintTop_toBottomOf="@+id/ppassword" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="435dp"
-        android:layout_height="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="32dp"
-        android:layout_marginTop="43dp"
         app:layout_constraintTop_toBottomOf="@+id/rpassword" />
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="435dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="enter your Phone"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="47dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:layout_editor_absoluteY="576dp" />
+        android:inputType="phone" />
 
     <Button
         android:id="@+id/signup"
-        android:layout_width="142dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="352dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@android:drawable/spinner_dropdown_background"
-        android:text="Sign Up"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="539dp" />
+        android:text="Sign Up" />
 
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
