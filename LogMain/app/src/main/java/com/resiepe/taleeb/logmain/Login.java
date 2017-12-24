@@ -3,6 +3,7 @@ package com.resiepe.taleeb.logmain;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -88,7 +89,10 @@ public class Login extends AppCompatActivity implements LoaderCallbacks<Cursor> 
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+//                attemptLogin();
+                Intent i = new Intent(Login.this,user1activity.class);
+                startActivity(i);
+                finish();
             }
         });
 

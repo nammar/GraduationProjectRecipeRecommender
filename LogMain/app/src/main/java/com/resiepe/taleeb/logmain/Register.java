@@ -23,7 +23,7 @@ Button signup;
         final EditText email=(EditText) findViewById(R.id.email);
         final EditText phone=(EditText) findViewById(R.id.phone);
 
-         signup = (Button) findViewById(R.id.Button);
+         signup = (Button) findViewById(R.id.signup);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

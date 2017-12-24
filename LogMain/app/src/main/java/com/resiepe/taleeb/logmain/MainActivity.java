@@ -23,7 +23,7 @@ Button regis,gust,user;
          }
      });
 
-        gust=(Button) findViewById(R.id.PageGuest);
+        gust=(Button) findViewById(R.id.guest);
         gust.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +32,7 @@ Button regis,gust,user;
             }
         });
 
-        user=(Button) findViewById(R.id.Login);
+        user=(Button) findViewById(R.id.login);
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
