@@ -1,4 +1,4 @@
-package com.springapp.mvc.controller;
+package project.controller;
 
 import com.springapp.mvc.model.Person;
 import com.springapp.mvc.service.AnalysisService;

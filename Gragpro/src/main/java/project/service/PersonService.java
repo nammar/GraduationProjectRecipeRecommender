@@ -1,5 +1,16 @@
-package project.controller;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package project.service;
 
+/**
+ *
+ * @author Yazan Zaghal
+ */
+
+import aj.org.objectweb.asm.Attribute;
 import com.springapp.mvc.model.*;
 import com.springapp.mvc.repository.*;
 import org.neo4j.cypher.internal.compiler.v1_9.commands.Has;
@@ -10,6 +21,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import project.repository.PersonRepository;
+import project.repository.GroupRepository;
+import project.controller.ContentAnalysisService;
+import project.domain.Group;
+import project.domain.Person;
+import project.repository.FriendRepository;
 
 /**
  * Created by Van on 3/20/2015.
@@ -25,10 +42,7 @@ public class PersonService {
     private GroupRepository groupRepository;
     @Autowired
     private AttributeRepository attributeRepository;
-    @Autowired
-    private CommentRepository commentRepository;
-    @Autowired
-    private HasRepository hasRepository;
+    
     @Autowired
     ContentAnalysisService contentAnalysisService;
     @Autowired
@@ -37,48 +51,6 @@ public class PersonService {
     public void addFriend(Person friend, Person user){
         user.friends(friend);
         template.save(user);
-    }
-
-    public boolean createComment(Long pid, String text){
-        if(commentExists(text)){
-            System.out.println("Comment exists!");
-            return false;
-        }
-        else {
-            Comment c = new Comment();
-            c.setOwnerId(pid);
-            c.setText(text);
-            c.setSentiment(contentAnalysisService.runSentimentAnalysisForText(text));
-            commentRepository.save(c);
-            addComment(c, getPerson(pid));
-            return true;
-        }
-    }
-
-    public boolean createReply(Long personId, Long parentId, String text){
-
-        Comment c = new Comment();
-        c.setOwnerId(personId);
-        c.setText(text);
-        c.setSentiment(contentAnalysisService.runSentimentAnalysisForText(text));
-        c.setParentId(parentId);
-        c.setAsReply();
-        commentRepository.save(c);
-        addComment(c, getPerson(personId));
-        addReply(getComment(parentId).getNodeID(), c);
-        commentRepository.save(getComment(parentId));
-
-//        System.out.println("comment created");
-//        System.out.println("owner: " + getPerson(personId).getName());
-//        System.out.println("parentid: " + c.getParentID());
-//        System.out.println("is root: " + c.isRoot());
-//        System.out.println("parent has children: " + getComment(c.getParentID()).hasChildren());
-//        System.out.println("is parent root: " + getComment(c.getParentID()).isRoot());
-//        System.out.println("has children: " + c.hasChildren());
-
-        // always true
-        return true;
-
     }
 
     public void addMember(Group group, Person user){

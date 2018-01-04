@@ -1,4 +1,4 @@
-package com.springapp.mvc.service;
+package project.controller;
 
 import com.springapp.mvc.model.Attribute;
 import com.springapp.mvc.model.Group;

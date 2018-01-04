@@ -1,4 +1,4 @@
-package com.springapp.mvc.service;
+package project.controller;
 
 import com.springapp.mvc.model.*;
 //import netkit.classifiers.relational.ClassDistribRelNeighbor;

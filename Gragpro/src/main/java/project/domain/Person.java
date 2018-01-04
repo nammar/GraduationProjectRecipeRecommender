@@ -34,7 +34,8 @@ public class Person {
     @Relationship(type = "favorite")
     private Recipe recipe;
 
-   
+   @Relationship(type = "join")
+    private Group group;
     
 
     public Person() {
