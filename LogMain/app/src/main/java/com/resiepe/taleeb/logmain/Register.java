@@ -18,12 +18,12 @@ Button signup;
 
         final EditText pname=(EditText) findViewById(R.id.pname);
         final EditText uname=(EditText) findViewById(R.id.uname);
-        final EditText ppassword=(EditText) findViewById(R.id.ppassword);
+        final EditText ppassword=(EditText) findViewById(R.id.upassword);
         final EditText rpassword=(EditText) findViewById(R.id.rpassword);
-        final EditText email=(EditText) findViewById(R.id.email);
-        final EditText phone=(EditText) findViewById(R.id.phone);
+        final EditText email=(EditText) findViewById(R.id.uemail);
+        final EditText phone=(EditText) findViewById(R.id.uphone);
 
-         signup = (Button) findViewById(R.id.signup);
+         signup = (Button) findViewById(R.id.usignup);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

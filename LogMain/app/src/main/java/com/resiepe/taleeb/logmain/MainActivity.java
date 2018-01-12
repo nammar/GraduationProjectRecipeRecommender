@@ -40,6 +40,7 @@ Button regis,gust,user;
                 startActivity(LoginIntent);
             }
         });
+
     }
 
 }
