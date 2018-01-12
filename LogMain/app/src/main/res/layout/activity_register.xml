@@ -8,61 +8,77 @@
     tools:context="com.resiepe.taleeb.logmain.Register">
 
     <EditText
+        android:id="@+id/uname"
+        android:layout_width="279dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName" />
+
+    <EditText
         android:id="@+id/pname"
-        android:layout_width="match_parent"
+        android:layout_width="279dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Your Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/uname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="UserName"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/ppassword"
-        android:layout_width="match_parent"
+        android:id="@+id/upassword"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/rpassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/urpassword"
+        android:layout_width="281dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:hint="Enter Password Again"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/uemail"
+        android:layout_width="282dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/rpassword" />
 
     <EditText
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
+        android:id="@+id/uphone"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="enter your Phone"
+        android:hint="Enter Your Phone"
         android:inputType="phone" />
 
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/spinner_dropdown_background"
-        android:text="Sign Up" />
+    <EditText
+        android:id="@+id/ubirthday"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:hint="Birthday" />
 
+    <EditText
+        android:id="@+id/ugender"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:hint="Gender" />
+
+    <EditText
+        android:id="@+id/uage"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:hint="Age" />
+
+    <Button
+        android:id="@+id/usignup"
+        android:layout_width="136dp"
+        android:layout_height="78dp"
+        android:text="Signup" />
 
 
 </LinearLayout>
